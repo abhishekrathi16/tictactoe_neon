@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek | Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background" id="background" data-select>
+        <div class="select-box">
+            <div class="content">
+                <div class="title">Select which you want to be?</div>
+                <div class="options">
+                    <a href="#" id="playerX">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Player X
+                    </a>
+                    <a href="#" id="playerO">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Player O
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <h1 class="neon" data-text="TIC TAC TOE">TIC TAC TOE</h1>
+    </div>
+    <div class="container">
+        <div class="board" id="board">
+            <div class="box" id="0" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="1" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="2" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="3" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="4" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="5" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="6" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="7" data-cell onclick="reply(this.id)"></div>
+            <div class="box" id="8" data-cell onclick="reply(this.id)"></div>
+        </div>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text class="message" data-text="">X HAS WON!</div>
+        <a href="#" id="restart-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            RESTART
+        </a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
